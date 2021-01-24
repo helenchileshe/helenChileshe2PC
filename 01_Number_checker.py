@@ -20,19 +20,19 @@ def intcheck(question, low=None, high=None):
 
             # Checks response is not too low
             if low is not None and response < low:
-                print(error)
+                print("error")
                 continue
 
             # Checks response is not too high
             if high is not None and response > high:
-                print(error)
+                print("error")
                 continue
 
             return response
 
         # checks input is a integer
         except ValueError:
-            print(error)
+            print("error")
             continue
 
 
